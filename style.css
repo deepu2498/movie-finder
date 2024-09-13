@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+ 
+    /* display: flex;
+    min-height: 100vh; */
+   background-color: #201f1f;
+   justify-content: center;
+   align-items:baseline;
+   /* padding-top: 2%;   */
+   
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: #007bff;
+  color: white;
+  height: 100px;
+  align-items: center;
+}
+.heading{
+  font-size: 25px;
+
+}
+i{
+  color: orange;
+}
+.logo{
+  color: orange;
+}
+/* h1{
+  color: #5e43f3;
+  font-family:fantasy;
+  font-size: 50px;
+  margin-bottom: 25px;
+  
+} */
+.heading:hover{
+     transition: transform 0.3s ease;
+     transform: scale(1.1);
+}
+.search-bar{
+  width: 300px;
+  padding:10px;
+  font-size: 16px;
+  border: 2px solid #ccc;  /*border style*/
+  border-radius: 5px;     /*for rounded corners*/
+  outline: none;      /*remove defaukt outline*/
+  transition: border-color 0.3s;
+  margin-left: 50px;
+  
+
+}
+.search-bar :focus{
+  border-color: #007bff;
+}
+.search-btn{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid  orange;
+  background-color: orange;
+  color: white;  /*color of text8*/
+  cursor: pointer; 
+  border-radius: 0 5px 5px 0; /*rounded color at right side*/
+  outline: none;
+}
+.search-btn:hover{
+  background-color: orange;
+  border-color: orange;  /*matching color of border8*/
+}
+
+h2{
+  margin-top: 20px;
+ color: white;
+  margin-left: 5rem;
+}
+
+.moviecard .title{
+  color: orange;
+}
+
+.card{
+    margin-top: 45px;
+
+
+}
+
+.moviecard{
+  
+  display: flex;
+  background-color: #080808;
+  padding: 22px;
+  width: 1000px;
+  margin: auto;
+  gap: 32px;
+}
+.moviecard h1{
+  
+  text-align: center;
+  color: #121212;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+
+}
+.moviecard .rating{
+
+  background-color:orange;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      display: flex;
+      justify-content: center;
+      width: 15%;
+      padding: 5px;
+      margin: auto;
+      position: relative;
+      margin-top: 20px;
+
+}
+.moviecard p{
+  margin-top: 22px ;
+  color: antiquewhite;
+}
+.moviecard a{
+      background-color: orangered;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      padding: 7px;
+      margin: auto;
+      position: relative;
+      margin-top: 20px;
+
+}
+.moviecard span{
+  color:white;
+}
+
+
+.cardText{
+  margin-top: 23px;
+}
+
+
+.image{
+  display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh; 
+}
+
+/*-------------------making it responsive----------------------*/
+
+@media screen and (max-width:1100px) {
+
+  .moviecard{
+    width: 90%;
+  }
+  
+}
+@media screen and (max-width:700px) {
+
+  .heading{
+    display: block;
+  }
+  .search-bar{
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
